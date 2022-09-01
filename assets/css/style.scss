@@ -1,1 +1,37 @@
 
+.right
+{
+    text-align: right;
+    color: #660000;
+    margin-right: 220px;
+}
+.left
+{
+    color: #660000;
+    margin-right: 220px;
+}
+#bio
+{
+    margin-right: 120px;
+    margin-top: 20px
+}
+#photo
+{
+    margin-top: 20px
+}
+a
+{
+    text-decoration: none;
+}
+a:hover
+{
+    text-decoration: underline;
+}
+* {
+    margin-left: 10px;
+}
+p {
+    font: 120% sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+  }
