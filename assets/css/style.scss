@@ -12,7 +12,11 @@
 }
 #bio
 {
+    font: 120% sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
     margin-right: 120px;
+    margin-left: 120px;
     margin-top: 20px
 }
 #photo
@@ -31,11 +35,8 @@ a:hover
     margin-left: 10px;
 }
 p {
-    font: 120% sans-serif;
-    text-align: justify;
-    text-justify: inter-word;
     margin-top: 100px;
     margin-bottom: 100px;
-    margin-right: 150px;
+    margin-right: 120px;
     margin-left: 80px;
   }
