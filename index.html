@@ -6,9 +6,71 @@
     </head>
 
     <body>
+        
     <div class="popup" onclick="myFunction()">About
       <span class="popuptext" id="myPopup">            Pablo Fernández Velasco is pursuing his research on the philosophy of place in the philosophy department of Trinity College Dublin. He is also affiliated to the Institute of Behavioural Neuroscience of University College London, and he supervises graduate work at the Bartlett School of Architecture. The focus of his work is on how space and place structure human experience. He specialises in spatial cognition and in phenomenology. He follows an interdisciplinary approach, actively collaborating with neuroscientists, architects, geographers and anthropologists.</span>
     </div>
+        <script>
+            
+    /* Popup container */
+    .popup {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    /* The actual popup (appears on top) */
+    .popup .popuptext {
+      visibility: hidden;
+      width: 160px;
+      background-color: #555;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 8px 0;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      margin-left: -80px;
+    }
+
+    /* Popup arrow */
+    .popup .popuptext::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #555 transparent transparent transparent;
+    }
+
+    /* Toggle this class when clicking on the popup container (hide and show the popup) */
+    .popup .show {
+      visibility: visible;
+      -webkit-animation: fadeIn 1s;
+      animation: fadeIn 1s
+    }
+
+    /* Add animation (fade in the popup) */
+    @-webkit-keyframes fadeIn {
+      from {opacity: 0;} 
+      to {opacity: 1;}
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity:1 ;}
+    } 
+            
+    // When the user clicks on <div>, open the popup
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+</script>
         <p>
             <iframe src="https://orcid.org/0000-0001-7563-8170/print" width="2000" height="3000" align="left" style="position: relative; left: -200px"></iframe> 
 
